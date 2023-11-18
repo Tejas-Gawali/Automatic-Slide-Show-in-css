@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+/* auto slide show of n no of slides */
+
+
+.images >* {
+    position: absolute;
+    animation-name: slideshow;
+    animation-duration: 20s;
+    animation-delay: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+.img2{
+    background-image: url("Game_equipment.png");
+    height: 300px;
+    width: 1340px;
+    background-size: cover;
+}
+
+.img3{
+    background-image: url("book_ing.png");
+    height: 300px;
+    width: 1340px;
+    background-size: cover;
+}
+
+.img4{
+    background-image: url("new_arival_toys.png");
+    height: 300px;
+    width: 1340px;
+    background-size: cover;
+}
+
+.img1{
+    background-image: url("amazon_background.png");
+    height: 300px;
+    width: 1340px;
+    background-size: cover;
+}
+
+
+@keyframes slideshow {
+    0%{background-image: url("amazon_background.png");opacity: 0.9995;}
+    25%{background-image: url("book_ing.png");opacity: 0.9997;}
+    50%{background-image: url("Game_equipment.png");opacity: 0.9998;}
+    75%{background-image: url("new_arival_toys.png");opacity: 0.9999;}
+    100%{background-image: url("amazon_background.png");opacity: 1;}
+}
